@@ -11,7 +11,25 @@
 
 p {
   display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+.info-header {
+  font-weight: bold;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  border: 1px black solid;
+  grid-gap: 0.5rem;
+}
+
+.res_exp {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+}
+
+.act_date {
+  margin: auto;
 }
