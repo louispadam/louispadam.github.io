@@ -24,12 +24,16 @@ p {
   grid-gap: 0.5rem;
 }
 
-.res_exp {
+.act_des {
   display: flex;
   flex-direction: column;
   border: 1px black solid;
 }
 
 .act_date {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  justify-content: center;
   margin: auto;
 }
