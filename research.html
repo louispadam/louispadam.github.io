@@ -3,61 +3,64 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Research AP</title>
-    <LINK href="styles.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/svg+xml" href="/assets/icons/web_icon_wo_circle.svg">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Research AP</title>
+  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/web_icon_wo_circle.svg">
 </head>
 
 <body>
 
-    <nav class="nav-head">
-      <p><a href="index.html">Main</a></p>
-        <p><a href="cv.html">Link to CV</a></p>
-        <p><a href="research.html">Link to Research</a></p>
-        <p><a href="teaching.html">Teaching</a></p>
-    </nav>
+  <nav class="nav-head">
+    <p><a href="index.html">Main</a></p>
+    <p><a href="cv.html">Link to CV</a></p>
+    <p><a href="research.html">Link to Research</a></p>
+    <p><a href="teaching.html">Teaching</a></p>
+  </nav>
 
-    <h1>Research</h1>
-    <header>
-        <p>My most recent research interests are in the realm of applied partial differential equations. The transition
-            from particle systems to continuum mechanics via mean-field limits features most prominently. I am also
-            interested in bifurcation analysis, particularly in the behavior of bifurcation points as models transition
-            between variants dominated by different modes. Both projects are part of my graduate work at Michigan State
-            University (MSU).</p>
-        <p>Prior to pursuing a doctoral degree, I conducted research in water-sustainability policy as a data scientist
-            and differential algebra as a Masters student in mathematics. The former resulted in a publication. The
-            latter was, unfortunately, left incomplete in the transition from my undergraduate institution, the
-            University of Vermont, to graduate school (UVM).</p>
-        <p>The bulk of my undergraduate research was in chemistry, particularly analytic and physical fields. My
-            undergraduate thesis focused on the photophysical mechanisms of organic molecules exhibiting anomalous
-            fluorescence. I also investigated the potential field-use of a novel extraction method for semivolatile
-            aerosols and participated in a project exploring the introduction of machine learning techniques to the
-            curricula of courses in computational chemistry.</p>
-    </header>
-    </hr>
-    <main>
-        <section id="mean_field">
-            <h2>Mean-Field Analysis of Yeast Metabolism</h2>
-            <p><a href="/research_pages/poster_acdc.html">Link to ACDC presentation</a></p>
-        </section>
-        <section id="bifurcations">
-            <h2>Turing-Like Bifurcations in Algae-Mussel Dynamics</h2>
-        </section>
-        <section id="photophysics">
-            <section>
-                <h2>Photophysics of Anomalous Stokes Shifts</h2>
-                <p><a href="/research_pages/poster_toptoq.html">Link to TOP/TOQ Poster</a></p>
-                <p><a href="/research_pages/poster_dph.html">Link to DPH Poster</a></p>
-            </section>
-            <section>
-                <h2>Aggregation-Induced Emissions by the Suppression of Relaxation Pathways</h2>
-            </section>
-        </section>
-        <section id="spme">
-            <h2>Solid-Phase Microextraction for Collection of Sugarcane Emissions</h2>
-        </section>
-    </main>
+  <h1>Research</h1>
+  <header>
+    <p>My most recent research interests are in the realm of applied partial differential equations. The transition from particle systems to continuum mechanics via mean-field limits features most prominently. I am also interested in bifurcation analysis, particularly in the behavior of bifurcation points as models transition between variants dominated by different modes. Both projects are part of my graduate work at Michigan State University (MSU).</p>
+    <p>Prior to pursuing a doctoral degree, I conducted research in water-sustainability policy as a data scientist and differential algebra as a Masters student in mathematics. The former resulted in a publication. The latter was, unfortunately, left incomplete in the transition from my undergraduate institution, the University of Vermont, to graduate school (UVM).</p>
+    <p>The bulk of my undergraduate research was in chemistry, particularly analytic and physical fields. My undergraduate thesis focused on the photophysical mechanisms of organic molecules exhibiting anomalous fluorescence. I also investigated the potential field-use of a novel extraction method for semivolatile aerosols and participated in a project exploring the introduction of machine learning techniques to the curricula of courses in computational chemistry.</p>
+  </header>
+  </hr>
+  <nav id="Table of Contents" name="Table of Contents" aria-label="Table of Contents">
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#mean-field">Mean-Field Analysis of Yeast Metabolism</a></li>
+      <li><a href="#stokes">Photophysics of Anomalous Stokes Shifts</a></li>
+      <li><a href="#sokr">Aggregation-Induced Emissions by the Suppression of Relaxation Pathways</a></li>
+      <li><a href="#spme">Solid-Phase Microextraction for Collection of Sugarcane Emissions</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="mean_field">
+      <h2>Mean-Field Analysis of Yeast Metabolism</h2>
+      <p>Yeast metabolism exhibits an asymmetric, nonlocal, spatially inhomogeneous interaction between agents that produces complex dynamics in both the particle and continuum settings. With that said, derivation of the continuum solution, characterized by a partial differential equation (<abbr>PDE</abbr>), as the limiting behavior of the particle system, a collection of coupled ordinary differential equations (<abbr>ODEs</abbr>), remains open. Preliminary numerical simulations actually suggest the models exhibit qualitatively different behavior. This is of relevance to both the biological aim of understanding temporal clustering observed in in yeast cutlures and the mathematical aim of better understanding mean-field limits, or deviations thereof.</p>
+      <p>Rigorous derivation of this mean-field limit, or proof of its failure, is the primary objective of my doctoral thesis. Under the supervision of <a href="https://users.math.msu.edu/users/promislo/">Dr. Keith Promislow</a>, I have developed numerical schemes for accurate simulation of both particle and continuum models and characterized the interaction kernel as outside the scope of current mean-field literature. Current avenues of investigation include the spectral stability of stationary and temporally periodic solutions, generalization of our numerical scheme to higher-dimension Vlasov-type equations, and the machine-learning of error terms in the BBGKY hierarchy.</p>
+      <p>Early results of the project have been presented at the Amsterdam Centre for Dynamics and Computations Autumn School (<a href="/research_pages/poster_acdc.html">poster available here</a>), and a more discussion of novel mean-field analysis was presented at Institute for Pure and Applied Mathematics' long program.</p>
+    </section>
+    <section id="stokes">
+      <h2>Photophysics of Anomalous Stokes Shifts</h2>
+      <p>Stokes shifts serve as one of the most important indicators of a molecules potential in light-emitting technologies. In brief, small Stokes shifts admit aggregation-caused quenching (<abbr>ACQ</abbr>), a phenomenon by which luminescent materials effectively disabled. This precludes their application in such burgeoning technological fields as fluorescence-based medical imaging and organic light-emitting diodes (<abbr>OLEDs</abbr>). The discovery of organic molecules with large Stokes shifts promises to surmount the challenge and broaden the field of candidates for technological application.</p>
+      <p>The greatest achievement of my undergraduate journey was elucidating the mechanism for large Stokes shifts in triazolopyridinium and triazoloquinolinium dyes. Collaborating with Drs. Morgan Cousins (<a href="https://www.linkedin.com/in/morgan-cousins/">her LinkedIn</a>) and <a href="https://mliptak.w3.uvm.edu/">Matthew Liptak</a>, I conducted computational chemical analysis using the ORCA-implementation of density functional theory. This led to a novel mechanism for large Stokes shifts based on the inversion of aromatic stability upon excitation.</p>
+      <p>The project was presented at an annual UVM Student Research Confernce (<a href="/research_pages/poster_toptoq.html">poster available here)</a> and included in my undergraduate thesis: <cite>Petrucci, Adam N., "<a href="https://scholarworks.uvm.edu/castheses/93/">Modeling of Photophysical Phenomena: Anomalies to Kasha's Rule and Conventional Stokes Shifts</a>" (2021). UVM College of Arts and Sciences College Honors Theses. 93.</cite>. Finally, I am most proud of the peer-reviewed publication of my research, <cite>Adam N. Petrucci, Morgan E. Cousins, Matthew D. Liptak, “<a href="https://pubs.acs.org/doi/10.1021/acs.jpcb.2c04397">Beyond 'Mega': Origin of the 'Giga' Stokes Shifts of Triazolopyrdiniums</a>.” J. Phys. Chem. B, 2022, 126: 6997-7005</cite>.</p>
+    </section>
+    <section id="sokr">
+      <h2>Aggregation-Induced Emissions by the Suppression of Relaxation Pathways</h2>
+      <p>Aggregation-induced emission (<abbr>AIE</abbr>) offers means of preserving photophysical properties in solid or aggregated states. As the converse to ACQ (<a href="#stokes">discussed above</a>), this is particularly relevant to the development of organic OLEDs and sustainable electronics. Moreover, in the photophysics community, ACQ has long been accepted as standard behavior AIE as only a rarity. In consequence, AIE is not only of practical use, but also of great academic interest.</p>
+      <p>Investigation of the Suppression of Kasha's Rule (<abbr>SOKR</abbr>) as a photophysical mechanism for AIE inaugurated my undergraduate research career. <a href="https://mliptak.w3.uvm.edu/">Dr. Matthew Liptak</a> mentored me in the use of absorbance and fluorescence spectrometries, paired with computational experiments, to elucidate photophysical phenomena. The project also implemented nuclear magnetic resonance spectroscopy to investigate the photo-induced isomerization of the principal molecul of interest, diphenyl hexatriene.</p>
+      <p>The results of this project were presented at the Champlain Area Chemistry Symposium, (<a href="research_pages/poster_dph.html">poster available here</a>) and included in my undergraduate honors thesis: <cite>Petrucci, Adam N., "<a href="https://scholarworks.uvm.edu/castheses/93/">Modeling of Photophysical Phenomena: Anomalies to Kasha’s Rule and Conventional Stokes Shifts</a>" (2021). UVM College of Arts and Sciences College Honors Theses. 93.</cite></p>
+    </section>
+    <section id="spme">
+      <h2>Solid-Phase Microextraction for Collection of Sugarcane Emissions</h2>
+      <p>Secondary organic aerosols (<abbr>SOA</abbr>s) significantly alter fluids' optical properties. This has proven a challenge at National Aeronautics and Space Administration (<abbr>NASA</abbr>) research and launch sites, which are often situated in isolated areas used for the cultivation of SOA-emitting crops, such as sugar cane. The technique of Solid-phase microextraction (<abbr>SPME</abbr>) was developed to facilitate on-site collection of SOA samples.</p>
+      <p>The Organic Aerosol Research Studies (<abbr>OARS</abbr>) Laboratory at the University of Vermont specializes in analytic atmospheric chemistry and hosted me as an intern. Under the tutelage of then-graduate student Rebecca Harvey (<a href="https://www.linkedin.com/in/rebecca-harvey-wel/">her LinkedIn</a>). I quantified the efficacy of SPME using coupled gas-chromatography mass-spectrometry (<abbr>GCMS</abbr>). This served as the culminating project in my membership of Essex High School's STEM Academy and the beginning of my journey in academic research.</p>
+      <p>My results contributed to an ACS publication: <cite>Kevin B. Fischer, Clarissa S. Gold, Rebecca M. Harvey, Adam N. Petrucci, Giuseppe A. Petrucci, “<a href="https://pubs.acs.org/doi/10.1021/acsearthspacechem.0c00092">Ozonolysis Chemistry and Phase Behavior of 1-Octen-3-ol-Derived Secondary Organic Aerosols</a>.” ACS Earth Space Chem., 2020, 4(8): 1298-1308</cite>
+      </p>
+    </section>
+  </main>
 </body>
 
 </html>
