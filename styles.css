@@ -3,18 +3,152 @@
   padding:0px;
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
-}
-
 p {
   display: block;
 }
 
 .info-header {
   font-weight: bold;
+}
+
+body {
+  position: static;
+}
+
+.main-header {
+  z-index: -1;
+  height: 60vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-title {
+  position: absolute;
+  top: 12vh;
+  left: 5vw;
+  z-index: 1;
+  font-size: 5rem;
+  background-color: hsla(200,100%,90%,0.7);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px hsla(200,100%, 90%,0.7);
+}
+
+#adam-snow {
+  transform: scaleX(-1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 50%;
+}
+
+.nav-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: hsl(200,95%,90%);
+  border-radius: 0 0 10px 10px;
+  z-index: 10;
+  height: 3rem;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-areas:
+  "blurb blurb pic"
+  "news links contact";
+  grid-gap: 5%;
+  justify-items: center;
+  align-items: top;
+  margin: 5%;
+}
+
+.side-blurb {
+  grid-area: blurb;
+}
+
+#adam-blue-shirt {
+  grid-area: pic;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 50%;
+}
+
+.media-links {
+  grid-area: links;
+}
+
+.custom-bullets {
+  list-style: none;
+  position: relative;
+}
+
+.linkedin-icon {
+  position: relative;
+  left: 1.5em;
+}
+
+.linkedin-icon::before {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 900;
+  content: "\f08c"; /* GitHub icon */
+  left: -1.4em;
+  position: absolute;
+  color: #0A66C2;
+}
+
+.github-icon {
+  position: relative;
+  left: 1.5em;
+}
+
+.github-icon::before {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 900;
+  content: "\f09b"; /* GitHub icon */
+  left: -1.4em;
+  position: absolute;
+  color: #181717;
+}
+
+.orcid-icon {
+  position: relative;
+  left: 1.5em;
+}
+
+.orcid-icon::before {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 900;
+  content: "\f8d2"; /* GitHub icon */
+  left: -1.4em;
+  position: absolute;
+  color: #A6CE39;
+}
+
+.google-scholar-icon {
+  position: relative;
+  left: 1.5em;
+}
+
+.google-scholar-icon::before {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 900;
+  content: "\e63b"; /* GitHub icon */
+  left: -1.4em;
+  position: absolute;
+  color: #4285F4;
+}
+
+.news {
+  grid-area: news;
+}
+
+.contact {
+  grid-area: contact;
 }
 
 .grid_container {
@@ -38,7 +172,14 @@ p {
   margin: auto;
 }
 
-img {
-  max-height: 100vh;
-  max-width: 100vw;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+  margin-top: 7%;
+  padding: 2%;
+  background-color: hsl(200,95%,90%);
+  border-radius: 10px;
 }
