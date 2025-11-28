@@ -9,246 +9,325 @@
   <link rel="icon" type="image/svg+xml" href="/assets/icons/web_icon_wo_circle.svg">
 </head>
 
-<body>
+<body class="cv-content">
+
+  <div class="main-header">
+    <h1 class="main-title">Curriculum<br />Vitae</h1>
+    <img id="adam-blackboard" src="/assets/images/photo_adam_blackboard.jpeg" />
+  </div>
 
   <nav class="nav-head">
-    <p><a href="index.html">Main</a></p>
-    <p><a href="cv.html">Link to CV</a></p>
-    <p><a href="research.html">Link to Research</a></p>
+    <p><a href="index.html">Home</a></p>
+    <p><a href="cv.html">CV</a></p>
+    <p><a href="research.html">Research</a></p>
     <p><a href="teaching.html">Teaching</a></p>
   </nav>
 
-  <h1>Curriculum Vitae</h1>
+  <header>
+    <p>Following is a summary of my professional journey. Relevant resources are linked when available, but please contact me if you have any questions or would like more information!</p>
+  </header>
 
-  <nav id="Table of Contents" name="Table of Contents" aria-label="Table of Contents">
+  <nav class="table-of-contents" name="Table of Contents" aria-label="Table of Contents">
     <h2>Table of Contents</h2>
     <ul>
-     <li><a href="#contact">Contact Information</a></li>
-     <li><a href="#education">Education</a></li>
-     <li><a href="#research">Research Experience</a></li>
-     <li><a href="#publications">Publications</a></li>
-     <li><a href="#presentations">Research Experience</a></li>
-     <li><a href="#conferences">Conference and Workshop Attendance</a></li>
-     <li><a href="#languages">Language Experience</a></li>
-     <li><a href="#affiliations">Professional Affiliations</a></li>
-     <li><a href="#awards">Awards and Honors</a></li>
+      <li><a href="#contact">Contact Information</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#research">Research Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#presentations">Research Experience</a></li>
+      <li><a href="#conferences">Conference and Workshop Attendance</a></li>
+      <li><a href="#languages">Language Experience</a></li>
+      <li><a href="#affiliations">Professional Affiliations</a></li>
+      <li><a href="#awards">Awards and Honors</a></li>
     </ul>
   </nav>
 
-  <main>
+  <main class="cv">
     <section id="contact">
-      <h2>Contact Information<h2>
-        
+      <h2>Contact Information</h2>
+      <address>
+        Email: <a href="mailto:petruc21@msu.edu">petruc21@msu.edu</a><br />
+        Office: Wells Hall C544, 619 Red Cedar Road<br />East Lansing MI 48823
+      </address>
     </section>
+    <hr class="divider" />
     <section id="education">
       <h2>Education</h2>
-      <ul>
-        <li><strong>Ph.D.</strong> from Michigan State University</li>
-        <ul>
-          <li>Specialty in <strong>Applied Partial Differential Equations</strong></li>
-        </ul>
-        <li><strong>B.A.</strong> from the University of Vermont</li>
-        <ul>
-          <li>Major in <strong>Mathematics</strong></li>
-          <li>Minor in <strong>Computer Science</strong></li>
-        </ul>
-        <li><strong>B.S.</strong> from the University of Vermont</li>
-        <ul>
-          <li>Major in <strong>Chemistry</strong></li>
-          <li>Minor in <strong>Physics</strong></li>
-        </ul>
-      </ul>
+      <div class="cv-grid">
+        <div class="act-date">
+          <p>2022-2027</p>
+          <p>(projected)</p>
+        </div>
+        <div class="act-des">
+          <p><strong>Ph.D.</strong> from Michigan State University</p>
+          <ul class="cv-subitem">
+            <li>Specialty in <strong>Applied Partial Differential Equations</strong></li>
+          </ul>
+        </div>
+        <div class="act-date">
+          <p>2016-2021</p>
+        </div>
+        <div class="act-des">
+          <p><strong>B.A.</strong> from the University of Vermont</p>
+          <ul class="cv-subitem">
+            <li>Major in <strong>Mathematics</strong></li>
+            <li>Minor in <strong>Computer Science</strong></li>
+          </ul>
+        </div>
+        <div class="act-date">
+          <p>2016-2021</p>
+        </div>
+        <div class="act-des">
+          <p><strong>B.S.</strong> from the University of Vermont</p>
+          <ul class="cv-subitem">
+            <li>Major in <strong>Chemistry</strong></li>
+            <li>Minor in <strong>Physics</strong></li>
+          </ul>
+        </div>
+      </div>
     </section>
+    <hr class="divider" />
     <section id="research">
       <h2>Research Experience</h2>
-      <div class="grid_container">
-        <div class="act_date">2024-current</div>
-        <div class="act_des">
+      <div class="cv-grid">
+        <div class="act-date">
+          <p>2024-2027</p>
+          <p>(projected)</p>
+        </div>
+        <div class="act-des">
           <p><span class="info-header">Role:</span> Graduate Researcher</p>
           <p><span class="info-header">Supervisor:</span> Keith Promislow</p>
-          <p><span class="info-header">Project:</span> <a href="/research.html#mean_field">mean field limits of systems with multiparticle  interactions</a></p>
+          <p><span class="info-header">Project:</span> <a href="/research.html#mean_field">mean field limits of systems with multiparticle interactions</a></p>
         </div>
-        <div class="act_date">2017-2021</div>
-        <div class="act_des">
+        <div class="act-date">2017-2021</div>
+        <div class="act-des">
           <p><span class="info-header">Role:</span> Undergraduate Researcher</p>
           <p><span class="info-header">Supervisor:</span> Matthew Liptak</p>
           <p><span class="info-header">Project:</span> <a href="/research.html#photophysics">Computational Modeling of Photophysical Phenomena: Anomalies among Kasha's Rule and Convential Stokes Shifts</a></p>
         </div>
-        <div class="act_date">Summer 2015</div>
-        <div class="act_des">
+        <div class="act-date">Summer 2015</div>
+        <div class="act-des">
           <p><span class="info-header">Role:</span> Research Intern</p>
           <p><span class="info-header">Supervisor:</span> Giuseppe Petrucci</p>
           <p><span class="info-header">Project:</span> <a href="/research.html#spme">Determination of the volatile emission of sugarcane and their implications to atmospheric chemistry</a></p>
         </div>
       </div>
     </section>
+    <hr class="divider" />
     <section>
       <h2>Publications</h2>
-      <ol type="1">
+      <ol type="1" reversed>
         <li>
-          Meredith T. Niles, Courtney Hammond Wagner, Natalia Aristiz&aacute;bal, Carolyn Hricko, Adam Petrucci, Luis Alex Rodriguez Cruz, "Individual and collective political efficacy predict farmer engagement and support for gorudnwater policies: implications form the California Sustainable Groundwater Management Act" <em>Ecol. Soc.</em>, <strong>2024</strong>, <em>29</em>(1): 5
+          <p><strong>Title</strong>: <a href="https://ecologyandsociety.org/vol29/iss1/art5/">Individual and collective political efficacy predict farmer engagement and support for gorundwater policies: implications form the California Sustainable Groundwater Management Act</a></p>
+          <p><strong>Authors</strong>: Meredith T. Niles, Courtney Hammond Wagner, Natalia Aristiz&aacute;bal, Carolyn Hricko, Adam Petrucci, Luis Alex Rodriguez Cruz</p>
+          <p><strong>Publication</strong>: <em>Ecol. Soc.</em>, <strong>2024</strong>, <em>29</em>(1): 5</p>
         </li>
         <li>
-          Adam N. Petrucci, Morgan E. Cousins, Matthew D. Liptak, "Beyond `Mega': Origin of the `Giga' Stokes Shifts of Traizolopyridiniums." <em>J. Phys. Chem. B.</em>, <strong>2022</strong>, 126: 6997-7005
+          <p><strong>Title</strong>: <a href="https://pubs.acs.org/doi/10.1021/acs.jpcb.2c04397">Beyond 'Mega': Origin of the 'Giga' Stokes Shifts of Triazolopyridiniums</a></p>
+          <p><strong>Authors</strong>: Adam N. Petrucci, Morgan E. Cousins, Matthew D. Liptak</p>
+          <p><strong>Publication</strong>: <em>J. Phys. Chem. B.</em>, <strong>2022</strong>, 126: 6997-7005</p>
         </li>
         <li>
-          Jacob M. Remington, Jonathon B. Ferrell, Marlo Zorman, Adam Petrucci, Severin T. Schneebeli, Jianing Li, "Machine Learning in a Molecular Modeling Course for Chemistry Biochemistry, and Biophysics Students." <em>The Biophysicst</em>, <strong>2020</strong>, <em>1</em>(2):11
+          <p><strong>Title</strong>: <a href="https://thebiophysicist.kglmeridian.com/view/journals/biop/1/2/article-11.xml">Machine Learning in a Molecular Modeling Course for Chemistry, Biochemistry, and Biophysics Students</a></p>
+          <p><strong>Authors</strong>: Jacob M. Remington, Jonathon B. Ferrell, Marlo Zorman, Adam Petrucci, Severin T. Schneebeli, Jianing Li</p>
+          <p><strong>Publication</strong>: <em>The Biophysicst</em>, <strong>2020</strong>, <em>1</em>(2):11</p>
         </li>
         <li>
-          Kevin B. Fischer, Clarissa S. Gold, Rebecca M. Harvey, Adam N. Petrucci, Giuseppe A. Petrucci, "Ozonolysis Chemistry and Phas Behavior of 1-Octen-3-ol-Derived Secondary Organic Aerosols." <em>ACS Earth Space Chem.</em>, <strong>2020</strong>, <em>4</em>(8): 1298-1308
+          <p><strong>Title</strong>: <a href="https://pubs.acs.org/doi/10.1021/acsearthspacechem.0c00092">Ozonolysis Chemistry and Phas Behavior of 1-Octen-3-ol-Derived Secondary Organic Aerosols</a></p>
+          <p><strong>Authors</strong>: Kevin B. Fischer, Clarissa S. Gold, Rebecca M. Harvey, Adam N. Petrucci, Giuseppe A. Petrucci</p>
+          <p><strong>Publication</strong>: <em>ACS Earth Space Chem.</em>, <strong>2020</strong>, <em>4</em>(8): 1298-1308</p>
         </li>
       </ol>
     </section>
+    <hr class="divider" />
     <section>
       <h2>Presentations</h2>
-      <ol>
+      <ol type="1" reversed>
         <li>
-          Petrucci, Adam; "Characterizing the Song of Water" <em>Institute for Pure and Applied Mathematics: Bridging the Gap Between Implicit and Explicit Methods</em>, <strong>2025</strong>, Los Angeles, CA, USA
+          <p><strong>Title</strong>: Characterizing the Song of Water</p>
+          <p><strong>Event</strong>: <em>Institute for Pure and Applied Mathematics: Workshop IV - Bridging the Gap Between Implicit and Explicit Methods</em></p>
+          <p><strong>Place</strong>: Los Angeles, CA, USA, <strong>2025</strong></p>
         </li>
         <li>
-          Petrucci, Adam; "<a href="/research_pages/poster_acdc.html">Pattern Formation in Cell Metabolism</a>" <em>ACDC Autumn School</em> <strong>2025</strong>, Amsterdam, NL
+          <p><strong>Title</strong>: <a href="/research_pages/poster_acdc.html">Pattern Formation in Cell Metabolism</a></p>
+          <p><strong>Event</strong>: <em>Amsterdam Centre for Dynamics and Computation Autumn School</em></p>
+          <p><strong>Place</strong>: Amsterdam, NL, <strong>2025</strong></p>
         </li>
         <li>
-          Petrucci, Adam; "Interaction Diversity in Mean-Field Settings" <em>Institute for Pure and Applied Mathematics Junior Seminar</em>, <strong>2025</strong>, Los Angeles, CA, USA
+          <p><strong>Title</strong>: Interaction Diversity in Mean-Field Settings</p>
+          <p><strong>Event</strong>: <em>Institute for Pure and Applied Mathematics Junior Seminar</em></p>
+          <p><strong>Place</strong>: Los Angeles, CA, USA, <strong>2025</strong></p>
         </li>
         <li>
-          Petrucci, Adam; "<a href="/research_pages/poster_toptoq.html">Structure-Function Relations: Modeling Mega-Stokes Shifts</a>" <em>UVM Student Research Conference</em>, <strong>2020</strong>, Burlington, VT, USA
+          <p><strong>Title</strong>: <a href="/research_pages/poster_toptoq.html">Structure-Function Relations: Modeling Mega-Stokes Shifts</a></p>
+          <p><strong>Event</strong>: <em>UVM Student Research Conference</em></p>
+          <p><strong>Place</strong>: Burlington, VT, USA, <strong>2020</strong></p>
         </li>
         <li>
-          Petrucci, Adam; "<a href="/research_pages/poster_dph.html">The Suppression of Kasha's Rule: A Photophysical Phenomena</a>" <em>Champlain Area Chemistry Symposium</em>, <strong>2019</strong>, Burlington, VT, USA
+          <p><strong>Title</strong>: <a href="/research_pages/poster_dph.html">The Suppression of Kasha's Rule: A Photophysical Phenomena</a></p>
+          <p><strong>Event</strong>: <em>Champlain Area Chemistry Symposium</em></p>
+          <p><strong>Place</strong>: Burlington, VT, USA, <strong>2019</strong></p>
         </li>
       </ol>
     </section>
+    <hr class="divider" />
     <section id="conferences">
       <h2>Conference and Workshop Attendance</h2>
-      <ol>
+      <ol type="1" reversed>
         <li>
-          "<a href="https://www.ipam.ucla.edu/programs/long-programs/bridging-the-gap-transitioning-from-deterministic-to-stochastic-interaction-modeling-in-electrochemistry/?tab=overview">Bridging the Gap: Transition from Deterministic to Stochastic Interaction Modeling in Electrochemistry</a>," hosted by the <em>Insitute for Pure and Applied Mathematics</em> (<abbr>IPAM</abbr>), <strong>2025</strong>, Chicago, IL, USA
+          <p><strong>Title</strong>: <a href="https://www.ipam.ucla.edu/programs/long-programs/bridging-the-gap-transitioning-from-deterministic-to-stochastic-interaction-modeling-in-electrochemistry/?tab=overview">Bridging the Gap: Transition from Deterministic to Stochastic Interaction Modeling in Electrochemistry</a></p>
+          <p><strong>Host</strong>: <em>Insitute for Pure and Applied Mathematics</em> (<abbr>IPAM</abbr>)</p>
+          <p><strong>Place</strong>: Chicago, IL, USA, Sept-Dec <strong>2025</strong></p>
         </li>
         <li>
-          "<a href="https://www.amsterdam-dynamics.nl/from-microscopic-dynamics-to-continuum-limits-acdc-autumn-school/">From microscopic dyanmics to continuum limits - ACDC Autumn School</a>," workshop hosted by the <em>Amsterdam Centre for Dynamics and Computation</em> (<abbr>ACDC</abbr>), <strong>2025</strong>, Amsterdam, NL
+          <p><strong>Title</strong>: <a href="https://www.amsterdam-dynamics.nl/from-microscopic-dynamics-to-continuum-limits-acdc-autumn-school/">From microscopic dyanmics to continuum limits - ACDC Autumn School</a></p>
+          <p><strong>Host</strong>: <em>Amsterdam Centre for Dynamics and Computation</em> (<abbr>ACDC</abbr>)</p>
+          <p><strong>Place</strong>: Amsterdam, NL, Oct <strong>2025</strong></p>
         </li>
         <li>
-          "<a href="https://sites.google.com/bu.edu/2025-siamg2s3/home?authuser=0">2025 Gene Golub Summer School on Frontiers in Multi-Dimensional Pattern Formation</a>," hosted by the <em>Insitute for Mathematical and Statistical Innovation</em> (<abbr>IMSI</abbr>), <strong>2025</strong>, Chicago, IL, USA
+          <p><strong>Title</strong>: <a href="https://sites.google.com/bu.edu/2025-siamg2s3/home?authuser=0">2025 Gene Golub Summer School on Frontiers in Multi-Dimensional Pattern Formation</a></p>
+          <p><strong>Host</strong>: <em>Society for Industrial and Applied Mathematics</em> (<abbr>SIAM</abbr>)</p>
+          <p><strong>Place</strong>: Montr&eacute;al, CA, Aug <strong>2025</strong></p>
         </li>
         <li>
-          "<a href="https://www.siam.org/conferences-events/workshops/2025-graduate-student-mathematical-modeling-camp/"></a>Graduate Student Mathematical Modeling Camp</a> and <a href="https://www.siam.org/conferences-events/workshops/2025-mathematical-problems-in-industry-workshop/">Mathematical Problems in Industry Workshop</a>," hosted by the <em>Society for Industrial and Applied Mathematics</em> (<abbr>SIAM</abbr>), <strong>2025</strong>, Pomona, CA, USA
+          <p><strong>Title</strong>: <a href="https://www.siam.org/conferences-events/workshops/2025-graduate-student-mathematical-modeling-camp/"></a>Graduate Student Mathematical Modeling Camp</a> and <a href="https://www.siam.org/conferences-events/workshops/2025-mathematical-problems-in-industry-workshop/">Mathematical Problems in Industry Workshop</a></p>
+          <p><strong>Host</strong>: <em>Society for Industrial and Applied Mathematics</em> (<abbr>SIAM</abbr>)</p>
+          <p><strong>Place</strong>: Pomona, CA, USA, June <strong>2025</strong></p>
         </li>
         <li>
-          "<a href="https://www.imsi.institute/activities/emergent-behavior-in-complex-systems-of-interacting-agents/">Emergent Behavior in Complex Systems of Interacting Agents," hosted by the <em>Insitute for Mathematical and Statistical Innovation</a></em> (<abbr>IMSI</abbr>), <strong>2025</strong>, Chicago, IL, USA
+          <p><strong>Title</strong>: <a href="https://www.imsi.institute/activities/emergent-behavior-in-complex-systems-of-interacting-agents/">Emergent Behavior in Complex Systems of Interacting Agents</a></p>
+          <p><strong>Host</strong>: <em>Insitute for Mathematical and Statistical Innovation</em> (<abbr>IMSI</abbr>)</p>
+          <p><strong>Place</strong>: Chicago, IL, USA, March <strong>2025</strong></p>
         </li>
         <li>
-          "<a href="https://www.imsi.institute/activities/mathematical-modeling-of-biological-interfacial-phenomena/">Mathematical Modeling of Biological Interfacial Phenomena</a>," hosted by the <em>Insitute for Mathematical and Statistical Innovation</em> (<abbr>IMSI</abbr>), <strong>2024</strong>, Chicago, IL, USA
+          <p><strong>Title</strong>: <a href="https://www.imsi.institute/activities/mathematical-modeling-of-biological-interfacial-phenomena/">Mathematical Modeling of Biological Interfacial Phenomena</a></p>
+          <p><strong>Host</strong>: <em>Insitute for Mathematical and Statistical Innovation</em> (<abbr>IMSI</abbr>)</p>
+          <p><strong>Place</strong>: Chicago, IL, USA, Dec <strong>2024</strong></p>
         </li>
       </ol>
     </section>
+    <hr class="divider" />
     <section id="outreach">
       <h2>Outreach</h2>
-      <div class="grid_container">
-        <div class="act_date">Spring 2025</div>
-        <div class="act_des">
+      <div class="cv-grid">
+        <div class="act-date">Spring 2025</div>
+        <div class="act-des">
           <p><span class="info-header">Activity</span>: Research Experience for Undergraduates</p>
           <p><span class="info-header">Role </span>: Supporting Graduate Researcher</p>
         </div>
       </div>
     </section>
+    <hr class="divider" />
     <section id="teaching">
       <h2>Teaching Experience</h2>
       <h3>Michigan State University (East Lansing, Michigan)</h3>
-      <div class="grid_container">
-        <div class="act_date">
-          <p>Spring 2024</p>
+      <div class="cv-grid">
+        <div class="act-date">
           <p>Fall 2025</p>
           <p>Spring 2025</p>
-        </div>
-        <div class="act_des">
-          <p><span class="info-header">MATH 235: Differential Equations</span></p>
-        </div>
-        <div class="act_date">
-          <p>Fall 2023</p>
-          <p>Summer 2025</p>
-        </div>
-        <div class="act_des">
-          <p><span class="info-header">MATH 314: Matrix Algebra I</span></p>
-        </div>
-        <div class="act_date">
-          <p>Fall 2024</p>
-        </div>
-        <div class="act_des">
-          <p><span class="info-header">Lead Teaching Assistant</span></p>
-        </div>
-        <div class="act_date">
           <p>Spring 2024</p>
+        </div>
+        <div class="act-des">
+          <p><span class="info-header">MATH 235: Differential Equations</span></p>
+          <p class="cv-subitem"><strong>Supervisor</strong>: Gabriel Nagy</p>
+        </div>
+        <div class="act-date">
+          <p>Summer 2025</p>
+          <p>Fall 2023</p>
+        </div>
+        <div class="act-des">
+          <p><span class="info-header">MATH 314: Matrix Algebra I</span></p>
+          <p class="cv-subitem"><strong>Supervisor</strong>: Hitesh Gakhar</p>
+        </div>
+        <div class="act-date">
           <p>Fall 2024</p>
         </div>
-        <div class="act_des">
-          <p><span class="info-header">Tutor Supervisor</span></p>
+        <div class="act-des">
+          <p><span class="info-header">Lead Teaching Assistant</span></p>
+          <p class="cv-subitem"><strong>Supervisor</strong>: Andrew Krause</p>
         </div>
-        <div class="act_date">
-          <p>Fall 2022</p>
+        <div class="act-date">
+          <p>Fall 2024</p>
+          <p>Spring 2024</p>
+        </div>
+        <div class="act-des">
+          <p><span class="info-header">Tutor Supervisor</span></p>
+          <p class="cv-subitem"><strong>Supervisor</strong>: Jane Zimmerman</p>
+        </div>
+        <div class="act-date">
+          <p>Spring 2025</p>
+          <p>Fall 2024</p>
           <p>Spring 2023</p>
           <p>Fall 2023</p>
           <p>Spring 2023</p>
-          <p>Fall 2024</p>
-          <p>Spring 2025</p>
+          <p>Fall 2022</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">Graduate Tutor</span></p>
+          <p class="cv-subitem"><strong>Supervisor</strong>: Jane Zimmerman</p>
         </div>
       </div>
-      <h2>University of Vermont (Burlington, Vermont)</h2>
-      <div class="grid_container">
-        <div class="act_date">
+      <h3>University of Vermont (Burlington, Vermont)</h3>
+      <div class="cv-grid">
+        <div class="act-date">
           <p>Spring 2022</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">MATH 242: Analysis in Several Real Variables II</span></p>
+          <p class="cv-subitem"><strong>Supervisor</strong>: Michael Wilson</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>Fall 2021</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">MATH 241: Analysis in Several Real Variables I</span></p>
+          <p class="cv-subitem"><strong>Supervisor</strong>: Michael Wilson</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>Spring 2020</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">MATH 255: Elementary Number Theory</span></p>
+          <p class="cv-subitem"><strong>Supervisor</strong>: Jonathan Sands</p>
         </div>
-        <div class="act_date">
-          <p>Fall 2018</p>
-          <p>Fall 2019</p>
+        <div class="act-date">
           <p>Fall 2020</p>
+          <p>Fall 2019</p>
+          <p>Fall 2018</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">CHEM 121: Quantitative Analysis</span></p>
+          <p class="cv-subitem"><strong>Supervisors</strong>: Dwight Matthews ('18), Giuseppe Petrucci ('19), Yanguang Ou ('20)</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>Spring 2019</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">CHEM 142: Organic Chemistry </span></p>
+          <p class="cv-subitem"><strong>Supervisor</strong>: Alexander Wurthmann</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>Spring 2020</p>
           <p>Fall 2020</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">CS 120: Advanced Programming: C++</span></p>
+          <p class="cv-subitem"><strong>Supervisor</strong>: Lisa Dion</p>
         </div>
       </div>
     </section>
+    <hr class="divider" />
     <section id="languages">
       <h2>Language Experience</h2>
       <h3>Spoken Languages</h3>
-      <p>English, French, Spanish, Italian</p>
+      <p class="cv-subitem">English, French, Spanish, Italian</p>
       <h3>Programming Languages</h3>
-      <p>MATLAB, Python, HTML, CSS, C++, Java</p>
+      <p class="cv-subitem">MATLAB, Python, HTML, CSS, C++, Java</p>
     </section>
+    <hr class="divider" />
     <section id="affiliations">
       <h2>Professional Affiliations</h2>
-      <ul>
+      <ul class="cv-subitem">
         <li>
           American Chemistry Society (<abbr>ACS</abbr>)
         </li>
@@ -258,62 +337,68 @@
         <li>
           Society for Industrial and Applied Mathematics (<abbr>SIAM</abbr>)
         </li>
-      </ol>
+        </ol>
     </section>
+    <hr class="divider" />
     <section id="awards">
       <h2>Awards and Honors</h2>
-      <div class="grid_container">
-        <div class="act_date">
+      <div class="cv-grid">
+        <div class="act-date">
           <p>2025</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">Graduate Research Associate Fellowship</span>; presented annually to a Michigan State University(<abbr>MSU</abbr>) graduate student to support thesis research</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>2022</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">John F. Kenney Award</span>; presented annually to a University of Vermont (<abbr>UVM</abbr>) graduate student for excellence in mathematics</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>2020</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">Outstanding Senior in Mathematics</span>; presented annually to a UVM undergraduate student for academic acheivement mathematics</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>2020</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">Christopher W. Allen Award</span>; presented annually to a University of Vermont (<abbr>UVM</abbr>) undergraduate student for academic acheivement in chemistry</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>2020</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">Excellence in Physical Chemistry Award</span>; presented annually to a (<abbr>UVM</abbr>) undergraduate student for outstanding achievements in physical chemistry</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>2019</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">Brown Chemistry Summer Fellowship</span>; summer research grant awarded to a UVM undergraduate student conducting resarch in inorganic chemistry</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>2018</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">Woodworth Prize</span>; summer research grant awarded to a UVM student on basis of a research proposal and academic accomplishment</p>
         </div>
-        <div class="act_date">
+        <div class="act-date">
           <p>2022</p>
         </div>
-        <div class="act_des">
+        <div class="act-des">
           <p><span class="info-header">Vermont Space Grand Undergraduate Scholarship</span>; awarded by teh NASA National Space Grant College and Fellowship Program annually for oustanding acheivement in the STEM fields</p>
         </div>
       </div>
     </section>
   </main>
+
+  <footer>
+    <p>Designed and Implemented by Adam Petrucci</p>
+    <p>Last Updated: 11/22/2025</p>
+  </footer>
 
 </body>
 
