@@ -4,8 +4,10 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Research AP</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <title>Adam Petrucci - Research</title>
+  <meta name="description" content="Adam Petrucci's research portfolio includes projects in mathematics, chemistry, and their interface. He specializes in especially mean-field analysis and photophysics."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/svg+xml" href="/assets/icons/web_icon_wo_circle.svg">
 </head>
 
@@ -13,17 +15,17 @@
 
   <div class="main-header">
     <h1 class="main-title">Research</h1>
-    <img id="adam-elden" src="/assets/images/photo_adam_elden.jpg" />
+    <img class="cover-photo" id="adam-elden" src="/assets/images/photo_adam_elden.jpg" />
   </div>
 
   <nav class="nav-head">
-    <p><a href="index.html">Home</a></p>
-    <p><a href="cv.html">CV</a></p>
-    <p><a href="research.html">Research</a></p>
-    <p><a href="teaching.html">Teaching</a></p>
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
   </nav>
 
-  <header>
+  <header class="intro-blurb">
     <p>My most recent research interests are in the realm of applied partial differential equations. The transition from particle systems to continuum mechanics via mean-field limits features most prominently. I am also interested in bifurcation analysis, particularly in the behavior of bifurcation points as models transition between variants dominated by different modes. Both projects are part of my graduate work at Michigan State University (MSU).</p>
     <p>Prior to pursuing a doctoral degree, I conducted research in water-sustainability policy as a data scientist and differential algebra as a Masters student in mathematics. The former resulted in a publication. The latter was, unfortunately, left incomplete in the transition from my undergraduate institution, the University of Vermont, to graduate school (UVM).</p>
     <p>The bulk of my undergraduate research was in chemistry, particularly analytic and physical fields. My undergraduate thesis focused on the photophysical mechanisms of organic molecules exhibiting anomalous fluorescence. I also investigated the potential field-use of a novel extraction method for semivolatile aerosols and participated in a project exploring the introduction of machine learning techniques to the curricula of courses in computational chemistry.</p>
@@ -33,6 +35,7 @@
     <h2>Table of Contents</h2>
     <ul>
       <li><a href="#mean-field">Mean-Field Analysis of Yeast Metabolism</a></li>
+      <li><a href="#electrochemistry">Mean-Field Modeling in Electrochemistry</a></li>
       <li><a href="#stokes">Photophysics of Anomalous Stokes Shifts</a></li>
       <li><a href="#sokr">Aggregation-Induced Emissions by the Suppression of Relaxation Pathways</a></li>
       <li><a href="#spme">Solid-Phase Microextraction for Collection of Sugarcane Emissions</a></li>
@@ -46,7 +49,16 @@
         <img class="research-graphic" src="/assets/images/graphic_yeast.png"/>
       </div>
       <p>Rigorous derivation of this mean-field limit, or proof of its failure, is the primary objective of my doctoral thesis. Under the supervision of <a href="https://users.math.msu.edu/users/promislo/">Dr. Keith Promislow</a>, I have developed numerical schemes for accurate simulation of both particle and continuum models and characterized the interaction kernel as outside the scope of current mean-field literature. Current avenues of investigation include the spectral stability of stationary and temporally periodic solutions, generalization of our numerical scheme to higher-dimension Vlasov-type equations, and the machine-learning of error terms in the BBGKY hierarchy.</p>
-      <p>Early results of the project have been presented at the Amsterdam Centre for Dynamics and Computations Autumn School (<a href="/research_pages/poster_acdc.html">poster available here</a>), and a more discussion of novel mean-field analysis was presented at Institute for Pure and Applied Mathematics' long program.</p>
+      <p>Early results of the project have been presented at the Amsterdam Centre for Dynamics and Computations Autumn School (<a href="/research_pages/poster_acdc.html">poster available here</a>), and a more general discussion of novel mean-field analysis was presented at the Institute for Pure and Applied Mathematics (<abbr>IPAM</abbr>).</p>
+    </section>
+    <section id="electrochemistry">
+      <h2>Mean-Field Modeling in Electrochemistry</h2>
+      <div class="research-flex">
+        <p>The high-dimensional nature of electrochemical settings poses a challenge to the design of computationally tractable models. The so-called ground-truth, atomistic simluations, are too computationally expensive for realistic simulations. Mean-field models reduce computational demand, but can fail to capture the singular events responsible for salient electrochemical phenomena. The Insitute for Pure and Applied Mathematics (<abbr>IPAM</abbr>) hosted a research program, `Bridging the Gap: Transitioning from Deterministic to Stochastic Interaction Modeling in Electrochemistry' to investigate the transition from particle to continuum models and develop a novel solution to the problem of electrochemical modeling.</p>
+        <img class="research-graphic" src="/assets/images/graphic_electrochemistry.png"/>
+      </div>
+      <p>Over the course of a three-month program, I participated in a working group developed and implemented a novel, preliminary mean-field model for simulating the electrochemical behavior of water. Participants included students and associates of Drs. <a href="https://users.math.msu.edu/users/promislo/">Dr. Keith Promislow</a>, and <a href="https://thorntongroup.engin.umich.edu/">Katsuyo Thornton</a>, and <a href="https://www.math.ucla.edu/~anderson/">Chris Andersen</a>. My principle contributions was in the design and implementation of a numerical scheme, pairing a pseudospectral approach with dimension-splitting, to simulate the new model.</p>
+      <p>As part of end-of-program presentations, both the model and simulations were presented at a culminating retreat. I presented the latter.</p>
     </section>
     <section id="stokes">
       <h2>Photophysics of Anomalous Stokes Shifts</h2>
@@ -63,7 +75,7 @@
         <p>Aggregation-induced emission (<abbr>AIE</abbr>) offers means of preserving photophysical properties in solid or aggregated states. As the converse to ACQ (<a href="#stokes">discussed above</a>), this is particularly relevant to the development of organic OLEDs and sustainable electronics. Moreover, in the photophysics community, ACQ has long been accepted as standard behavior AIE as only a rarity. In consequence, AIE is not only of practical use, but also of great academic interest.</p>
         <img class="research-graphic" src="/assets/images/graphic_sokr.png"/>
       </div>   
-      <p>Investigation of the Suppression of Kasha's Rule (<abbr>SOKR</abbr>) as a photophysical mechanism for AIE inaugurated my undergraduate research career. <a href="https://mliptak.w3.uvm.edu/">Dr. Matthew Liptak</a> mentored me in the use of absorbance and fluorescence spectrometries, paired with computational experiments, to elucidate photophysical phenomena. The project also implemented nuclear magnetic resonance spectroscopy to investigate the photo-induced isomerization of the principal molecul of interest, diphenyl hexatriene.</p>
+      <p>Investigation of the Suppression of Kasha's Rule (<abbr>SOKR</abbr>) as a photophysical mechanism for AIE inaugurated my undergraduate research career. <a href="https://mliptak.w3.uvm.edu/">Dr. Matthew Liptak</a> and then-graduate student <a href="https://www.linkedin.com/in/morgan-cousins/">Morgan Cousins</a> mentored me in the use of absorbance and fluorescence spectrometries, paired with computational experiments, to elucidate photophysical phenomena. The project also implemented nuclear magnetic resonance spectroscopy to investigate the photo-induced isomerization of the principal molecul of interest, diphenyl hexatriene.</p>
       <p>The results of this project were presented at the Champlain Area Chemistry Symposium, (<a href="research_pages/poster_dph.html">poster available here</a>) and included in my undergraduate honors thesis: <cite>Petrucci, Adam N., "<a href="https://scholarworks.uvm.edu/castheses/93/">Modeling of Photophysical Phenomena: Anomalies to Kasha’s Rule and Conventional Stokes Shifts</a>" (2021). UVM College of Arts and Sciences College Honors Theses. 93.</cite></p>
     </section>
     <section id="spme">
@@ -72,11 +84,15 @@
         <p>Secondary organic aerosols (<abbr>SOA</abbr>s) significantly alter fluids' optical properties. This has proven a challenge at National Aeronautics and Space Administration (<abbr>NASA</abbr>) research and launch sites, which are often situated in isolated areas used for the cultivation of SOA-emitting crops, such as sugar cane. The technique of Solid-phase microextraction (<abbr>SPME</abbr>) was developed to facilitate on-site collection of SOA samples.</p>
         <img class="research-graphic" src="/assets/images/graphic_spme.png"/>
       </div>
-      <p>The Organic Aerosol Research Studies (<abbr>OARS</abbr>) Laboratory at the University of Vermont specializes in analytic atmospheric chemistry and hosted me as an intern. Under the tutelage of then-graduate student Rebecca Harvey (<a href="https://www.linkedin.com/in/rebecca-harvey-wel/">her LinkedIn</a>). I quantified the efficacy of SPME using coupled gas-chromatography mass-spectrometry (<abbr>GCMS</abbr>). This served as the culminating project in my membership of Essex High School's STEM Academy and the beginning of my journey in academic research.</p>
+      <p>The Organic Aerosol Research Studies (<abbr>OARS</abbr>) Laboratory at the University of Vermont, headed by <a href="https://www.uvm.edu/cas/chemistry/profile/giuseppe-joe-petrucci">Dr. Giuseppe Petrucci</a>, specializes in analytic atmospheric chemistry and hosted me as an intern. Under the tutelage of then-graduate student Rebecca Harvey (<a href="https://www.linkedin.com/in/rebecca-harvey-wel/">her LinkedIn</a>). I quantified the efficacy of SPME using coupled gas-chromatography mass-spectrometry (<abbr>GCMS</abbr>). This served as the culminating project in my membership of Essex High School's STEM Academy and the beginning of my journey in academic research.</p>
       <p>My results contributed to an ACS publication: <cite>Kevin B. Fischer, Clarissa S. Gold, Rebecca M. Harvey, Adam N. Petrucci, Giuseppe A. Petrucci, “<a href="https://pubs.acs.org/doi/10.1021/acsearthspacechem.0c00092">Ozonolysis Chemistry and Phase Behavior of 1-Octen-3-ol-Derived Secondary Organic Aerosols</a>.” ACS Earth Space Chem., 2020, 4(8): 1298-1308</cite>
       </p>
     </section>
   </main>
+  <footer>
+    <p>Designed and Implemented by Adam Petrucci</p>
+    <p>Last Updated: 11/22/2025</p>
+  </footer>
 </body>
 
 </html>
