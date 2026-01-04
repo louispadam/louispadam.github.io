@@ -1,6 +1,6 @@
 /* Redefine Default Settings */
-root {
-  background-color: hsl(200,100%,95%);
+* {
+  background-color: hsl(200,100%,97%);
   margin:0px;
   padding:0px;
   font-family: 'Times New Roman', Times, serif;
@@ -9,6 +9,25 @@ root {
 /* Update Fonts */
 h1, h2, h3, h4, h5, h6, nav a{
   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: underline 1px dashed black;
+  text-underline-offset: 0.2em;
+}
+
+.nav-head a, .table-of-contents a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+.nav-head a:hover{
+  font-weight: bold;
 }
 
 /* Set Base */
@@ -56,8 +75,13 @@ p {
   height: 3rem;
 }
 
+.nav-head a {
+  background-color: hsl(200,95%,90%);
+}
+
 .intro-blurb {
   margin-top: 20px;
+  text-align: justify;
 }
 
 header p {
@@ -86,11 +110,17 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   margin: 5%;
   margin-top: 7%;
   padding: 2%;
   background-color: hsl(200,95%,90%);
   border-radius: 10px;
+}
+
+footer * {
+  background-color: hsl(200,95%,90%);
+  margin: auto 20px;
 }
 
 /* Cover Photos */
@@ -116,21 +146,51 @@ footer {
   transform-origin: 60% 75%;
 }
 
-/* Home Page Styles */
-
-.main-grid {
-  display: grid;
-  grid-template-areas:
-  "blurb blurb pic"
-  "news links contact";
-  grid-gap: 5%;
-  justify-items: center;
-  align-items: top;
-  margin: 5%;
+#adam-pacific {
+  transform: scale(1.0);
+  transform-origin: 50% 50%;
 }
 
-.media-links {
-  grid-area: links;
+/* Home Page Styles */
+
+#adam-blue-shirt {
+  display: block;
+  height: 350px;
+  width: 80%;
+  object-fit: cover;
+  object-position: center 10%;
+  margin: 20px auto;
+}
+
+.home-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-bottom > div {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.news ul {
+  list-style: none;
+  max-height: 120px;
+  width: 80%;
+  overflow-y: auto;
+  border: 1px solid black;
+  padding: 2px 4px;
+  margin: auto;
+}
+
+.news-piece {
+  margin-top: 0px;
+  padding-left: 20px;
+}
+
+.news li {
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .custom-bullets {
@@ -140,14 +200,13 @@ footer {
 
 .media-icon {
   position: relative;
-  left: 1.5em;
+  left: -10%;
 }
 
 .media-icon::before {
   font-family: "Font Awesome 6 Brands";
   font-weight: 900;
-  left: -1.4em;
-  position: absolute;
+  position: relative;
 }
 
 #linkedin-icon::before {
@@ -170,37 +229,16 @@ footer {
   color: #4285F4;
 }
 
-.news {
-  grid-area: news;
-}
-
-.contact {
-  grid-area: contact;
-}
-
-.side-blurb {
-  grid-area: blurb;
-}
-
-#adam-blue-shirt {
-  grid-area: pic;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center 50%;
-}
-
 /* CV Page Styles */
 
 .info-header {
   font-weight: bold;
 }
 
-.cv-subitem {
+.cv-subitem, .cv-subitem li {
   list-style: none;
   position: relative;
-  left: 2rem;
-  margin-top: 1%;
+  margin-left: 30px;
 }
 
 .cv {
@@ -212,9 +250,13 @@ footer {
 }
 
 .cv h2 {
-  margin-bottom: 1%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
+.tight-spacing {
+  margin-bottom: 10px;
+}
 .cv-grid {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -225,7 +267,6 @@ footer {
   margin-left: 5%;
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
 }
 
@@ -233,8 +274,13 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: auto;
   text-align: center;
+}
+
+.act-des ul {
+  margin: 0;
 }
 
 ol {
@@ -246,7 +292,7 @@ ol li {
 }
 
 .divider {
-  margin: auto;
+  margin: 15px auto;
   border: none;
   width: 90%;
   background-color: hsl(200,95%,90%);
@@ -260,10 +306,11 @@ ol li {
 /* Research Page Styles */
 
 .research-graphic {
-  float: right;
-  height: 50%;
-  width: 50%;
-  margin: 2%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 10px;
 }
 
 .research-content h2, h3 {
@@ -277,17 +324,57 @@ ol li {
   margin-top: 0;
 }
 
-.research-flex {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+/* Research Auxilliaries */
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+  height: 400px;
+}
+
+.research-poster {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
 }
 
 /* Medium-sized Screens */
 
 @media (min-width: 600px) {
-  .research-flex {
+  .research-graphic {
+    float: right;
+    padding: 2%;
+    width: 50%;
+    margin: 0;
+  }
+  .news {
+    width: 45%;
+  }
+  .media-links {
+    width: 25%;
+  }
+  .contact {
+    width: 25%;
+  }
+  #media-header {
+    position: relative;
+    left: -10px;
+  }
+  .home-bottom {
     flex-direction: row;
+    justify-content: space-between;
+  }
+  .home-top {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #adam-blue-shirt {
+    float: right;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
   }
 }
 
@@ -297,7 +384,7 @@ ol li {
   body {
     text-align: justify;
     margin: auto;
-    width: 900px;
+    width: 860px;
   }
   .main-title {
     left: calc(0.05*900px + ( 100vw - 900px) / 2)
