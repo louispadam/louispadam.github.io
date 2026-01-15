@@ -8,12 +8,16 @@
 }
 
 :root {
-  --last-updated: "1/13/2026";
+  --last-updated: "1/15/2026";
 }
 
 /* Update Fonts */
 h1, h2, h3, h4, h5, h6, nav a{
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h2, .table-of-contents * {
+  text-align: left;
 }
 
 a {
@@ -45,6 +49,7 @@ body {
 
 p {
   display: block;
+  font-size: 16px;
 }
 
 section {
@@ -58,6 +63,12 @@ h2 {
 
 emph {
   font-style: italic;
+}
+
+cite {
+  display: block;
+  margin: 10px 50px;
+  text-indent: 0px;
 }
 
 /* General Page Set-Up */
@@ -74,7 +85,7 @@ emph {
   top: 12vh;
   left: 5vw;
   z-index: 1;
-  font-size: 5rem;
+  font-size: 2rem;
   background-color: hsla(200,100%,90%,0.7);
   text-align: center;
   border-radius: 10px;
@@ -371,7 +382,20 @@ iframe {
   margin-top: 5px;
 }
 
+/* Small-Sized Screens */
+@media (min-width: 300px) {
+  .main-title {
+    font-size: 3rem;
+  }
+}
+
 /* Medium-sized Screens */
+
+@media (min-width: 500px) {
+  .main-title {
+    font-size: 4rem;
+  }
+}
 
 @media (min-width: 600px) {
   .research-graphic {
@@ -413,8 +437,8 @@ iframe {
 /* Mid-large transition */
 
 @media (min-width: 720px) {
-  p {
-    font-size: 18px;
+  .main-title {
+    font-size: 5rem;
   }
 }
 
